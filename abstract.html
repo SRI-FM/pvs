@@ -16,9 +16,10 @@
     <link rel="stylesheet" type="text/css" href="css/fm-style.css" />
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/pvs-highlight.js" defer></script>
     <script>
      function gtagManual() {
-       gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '7.1.0'});
+       gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '8.1'});
      }
     </script>
     <title>Predicate Abstraction in PVS&trade;</title>
@@ -50,49 +51,43 @@
 <p class="logo">
 <a href="#"><img width="200" height="110" src="images/pvslogo.gif" alt="PVS"/></a>
 </p>
-<h4>Download 7.1</h4>
+<h4>Download 8.1</h4>
 <ul>
-<li><a href="license.html?tgzfile=pvs7.1.0-ix86_64-Linux-allegro.tgz"
-onclick="gtag('event', 'Download', { 'event_category' : 'Linux Allegro', 'event_label' : '7.1.0'});"
->
-Linux Allegro</a></li>
-<li><a href="license.html?tgzfile=pvs7.1.0-ix86-MacOSX-allegro.tgz"
-onclick="gtag('event', 'Download', { 'event_category' : 'MacOSX Allegro', 'event_label' : '7.1.0'});"
->
-Mac&nbsp;OS&nbsp;X Allegro</a> </li>
-<li><a href="downloads/pvs7.1.0-ix86_64-Linux-sbclisp.tgz"
-onclick="gtag('event', 'Download', { 'event_category' : 'Linux SBCL', 'event_label' : '7.1.0'});"
->
-Linux SBCL</a></li>
-<li><a href="downloads/pvs7.1.0-ix86-MacOSX-sbclisp.tgz"
-onclick="gtag('event', 'Download', { 'event_category' : 'MacOSX SBCL', 'event_label' : '7.1.0'});"
->
-Mac&nbsp;OS&nbsp;X SBCL</a> </li>
-<li><a href="https://github.com/SRI-CSL/PVS">Github sources</a></li>
+<li><a href="https://github.com/SRI-CSL/PVS/releases/download/pvs8.1-master-20260624/pvs-master-20260624-linux-x86_64.tgz"
+onclick="gtag('event', 'Download', { 'event_category' : 'Linux x86-64', 'event_label' : '8.1'});">Linux x86-64</a></li>
+<li><a href="https://github.com/SRI-CSL/PVS/releases/download/pvs8.1-master-20260624/pvs-master-20260624-linux-aarch64.tgz"
+onclick="gtag('event', 'Download', { 'event_category' : 'Linux ARM64', 'event_label' : '8.1'});">Linux ARM64</a></li>
+<li><a href="https://github.com/SRI-CSL/PVS/releases/download/pvs8.1-master-20260624/pvs-master-20260624-macos-x86_64.tgz"
+onclick="gtag('event', 'Download', { 'event_category' : 'macOS Intel', 'event_label' : '8.1'});">macOS Intel</a></li>
+<li><a href="https://github.com/SRI-CSL/PVS/releases/download/pvs8.1-master-20260624/pvs-master-20260624-macos-arm64.tgz"
+onclick="gtag('event', 'Download', { 'event_category' : 'macOS Apple Silicon', 'event_label' : '8.1'});">macOS Apple Silicon</a></li>
+
+<li><a class="github-source" href="https://github.com/SRI-CSL/PVS">
+<img src="images/github-mark.svg" alt="" /> Source on GitHub
+</a></li>
 <li><a href="downloads.html">All Downloads...</a></li>
 </ul>
-<h4><a href="downloads.html">Install 8.0 Beta</a></h4>
 <h4>NASA Additions</h4>
 <ul>
 <li><a href="https://shemesh.larc.nasa.gov/fm/pvs/PVS-library"
-onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '7.1.0'});">NASA Library</a></li>
+onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '8.1'});">NASA Library</a></li>
 <li><a href="https://github.com/nasa/vscode-pvs"
-onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '7.1.0'});">VSCode PVS Plugin</a></li>
+onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '8.1'});">VSCode PVS Plugin</a></li>
 </ul>
 <h4>Manuals</h4>
 <ul>
 <li><a href="doc/pvs-release-notes.pdf"
-onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '7.1.0'});">Release Notes</a></li>
+onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '8.1'});">Release Notes</a></li>
 <li><a href="doc/pvs-system-guide.pdf"
-onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '7.1.0'});">System Guide</a></li>
+onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '8.1'});">System Guide</a></li>
 <li><a href="doc/pvs-language-reference.pdf"
-onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '7.1.0'});">Language Reference</a></li>
+onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '8.1'});">Language Reference</a></li>
 <li><a href="doc/pvs-prover-guide.pdf"
-onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '7.1.0'});">Prover Guide</a></li>
+onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '8.1'});">Prover Guide</a></li>
 <li><a href="doc/datatypes.pdf"
-onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '7.1.0'});">Datatypes</a></li>
+onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '8.1'});">Datatypes</a></li>
 <li><a href="doc/interpretations.pdf"
-onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '7.1.0'});">Theory Interpretations</a></li>
+onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '8.1'});">Theory Interpretations</a></li>
 </ul>
 <h4>Patches</h4>
 <ul>
@@ -119,7 +114,7 @@ onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' 
       </p>
 
       <p>
-	Syntax: <tt>(abstract (pred_1 ... pred_k) &amp;optional cases-rewrite? [T] exclusive? proof-counter)</tt>
+	Syntax: <code class="language-pvs-strategy">(abstract (pred_1 ... pred_k) &amp;optional cases-rewrite? [T] exclusive? proof-counter)</code>
       </p>
 
       <p>
@@ -134,7 +129,7 @@ onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' 
 
       <p>
 	The list <tt>(pred_1 ... pred_k)</tt> is a list of state predicates of
-	the form <tt> lambda(s:state):P(s)</tt>, where <tt>P(s)</tt> is any
+	the form <code class="language-pvs"> lambda(s:state):P(s)</code>, where <tt>P(s)</tt> is any
 	predicate expressible in the PVS assertions language.
       </p>
 
@@ -187,12 +182,11 @@ onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' 
 	the following proof strategy:
       </p>
 
-      <pre>
-    (defstep abstract-and-mc (list-state-predicates)
+      <pre><code class="language-pvs-strategy">    (defstep abstract-and-mc (list-state-predicates)
 	 (try (abstract list-state-predicates) (musimp) (skip))
      "abstract-and-mc"
      "Interpret using boolean abstraction 
-       and prove by model-checking!")</pre>
+       and prove by model-checking!")</code></pre>
 
       <p>
 	The proof strategy applies successively the command <tt>abstract</tt>
@@ -202,19 +196,19 @@ onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' 
       </p>
 
       <p>
-	<b>Example</b>: Consider the following state type: <tt> state : TYPE
-	  [# pc : control ; y1,y2: nat #]</tt> where control is an enumerated type
-	<tt> control : TYPE = {idle, wait, enter, exit}</tt> Consider a
-	boolean abstraction defined with the predicate <tt> lamda(s:state):
-	  y1(s)=y2(s)</tt> This defines the abstract state type <tt> abs_state :
-	  TYPE [# pc : control; B_1 : boolean #] </tt>
+	<b>Example</b>: Consider the following state type: <code class="language-pvs"> state : TYPE
+	  [# pc : control ; y1,y2: nat #]</code> where control is an enumerated type
+	<code class="language-pvs"> control : TYPE = {idle, wait, enter, exit}</code> Consider a
+	boolean abstraction defined with the predicate <code class="language-pvs"> lamda(s:state):
+	  y1(s)=y2(s)</code> This defines the abstract state type <code class="language-pvs"> abs_state :
+	  TYPE [# pc : control; B_1 : boolean #] </code>
       </p>
 
       <p>
-	The assertion <tt> pc(state1)= idle and state2= state1 with [ pc :=
-	wait ; y1 := y2(state1)+1 ]</tt> is abstracted to <tt>
+	The assertion <code class="language-pvs"> pc(state1)= idle and state2= state1 with [ pc :=
+	wait ; y1 := y2(state1)+1 ]</code> is abstracted to <code class="language-pvs">
 	idle?(pc(abs_state1)) and pc(abs_state2)=wait and not
-	B_1(abs_state_2)</tt>
+	B_1(abs_state_2)</code>
       </p>
 
       <p>

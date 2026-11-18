@@ -96,6 +96,30 @@ a:hover {
   color: #2491CF;
 }
 
+a.github-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  margin: 0.25em 0;
+  padding: 0.25em 0.5em;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  background-color: #f6f8fa;
+  color: #24292f;
+  font-size: 0.9em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+a.github-source:hover, a.github-source:focus-visible {
+  background-color: #eaeef2;
+}
+
+a.github-source img {
+  width: 16px;
+  height: auto;
+}
+
 pre {
   font-family: "Lucida Console", "DejaVu Sans Mono", Monaco, monospace;
   font-size: 0.95em;
@@ -120,6 +144,21 @@ cite, code, tt {
   border-bottom: 1px solid #ddd;
   color: #333;
 }
+
+pre > code {
+  font: inherit;
+  letter-spacing: inherit;
+  background: none;
+  border: 0;
+  color: inherit;
+}
+
+/* Emacs font-lock colors adjusted for contrast on the portal's light code panels. */
+.syntax-keyword   { color: #800080; font-weight: 600; }
+.syntax-operator  { color: #183f96; }
+.syntax-delimiter { color: #555e70; }
+.syntax-comment   { color: #a12020; font-style: italic; }
+.syntax-string    { color: #8a4949; }
 
 hr {
   border: 1px solid #abc;
@@ -229,6 +268,16 @@ h1, h2, h3 {
   padding: 0.2em;
   box-shadow: 2px 2px 5px blue;
   /* shadow: 2px 2px 5px red; */
+}
+
+.downloads-page > h2,
+.downloads-page > h3 {
+  display: block;
+  width: fit-content;
+}
+
+.downloads-page > h1 + h2 {
+  margin-top: 0;
 }
 
 div.body h4 {

@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css/fm-style.css" />
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/pvs-highlight.js" defer></script>
     <title>WS1S</title>
   </head>
 
@@ -43,49 +44,43 @@
 <p class="logo">
 <a href="#"><img width="200" height="110" src="images/pvslogo.gif" alt="PVS"/></a>
 </p>
-<h4>Download 7.1</h4>
+<h4>Download 8.1</h4>
 <ul>
-<li><a href="license.html?tgzfile=pvs7.1.0-ix86_64-Linux-allegro.tgz"
-onclick="gtag('event', 'Download', { 'event_category' : 'Linux Allegro', 'event_label' : '7.1.0'});"
->
-Linux Allegro</a></li>
-<li><a href="license.html?tgzfile=pvs7.1.0-ix86-MacOSX-allegro.tgz"
-onclick="gtag('event', 'Download', { 'event_category' : 'MacOSX Allegro', 'event_label' : '7.1.0'});"
->
-Mac&nbsp;OS&nbsp;X Allegro</a> </li>
-<li><a href="downloads/pvs7.1.0-ix86_64-Linux-sbclisp.tgz"
-onclick="gtag('event', 'Download', { 'event_category' : 'Linux SBCL', 'event_label' : '7.1.0'});"
->
-Linux SBCL</a></li>
-<li><a href="downloads/pvs7.1.0-ix86-MacOSX-sbclisp.tgz"
-onclick="gtag('event', 'Download', { 'event_category' : 'MacOSX SBCL', 'event_label' : '7.1.0'});"
->
-Mac&nbsp;OS&nbsp;X SBCL</a> </li>
-<li><a href="https://github.com/SRI-CSL/PVS">Github sources</a></li>
+<li><a href="https://github.com/SRI-CSL/PVS/releases/download/pvs8.1-master-20260624/pvs-master-20260624-linux-x86_64.tgz"
+onclick="gtag('event', 'Download', { 'event_category' : 'Linux x86-64', 'event_label' : '8.1'});">Linux x86-64</a></li>
+<li><a href="https://github.com/SRI-CSL/PVS/releases/download/pvs8.1-master-20260624/pvs-master-20260624-linux-aarch64.tgz"
+onclick="gtag('event', 'Download', { 'event_category' : 'Linux ARM64', 'event_label' : '8.1'});">Linux ARM64</a></li>
+<li><a href="https://github.com/SRI-CSL/PVS/releases/download/pvs8.1-master-20260624/pvs-master-20260624-macos-x86_64.tgz"
+onclick="gtag('event', 'Download', { 'event_category' : 'macOS Intel', 'event_label' : '8.1'});">macOS Intel</a></li>
+<li><a href="https://github.com/SRI-CSL/PVS/releases/download/pvs8.1-master-20260624/pvs-master-20260624-macos-arm64.tgz"
+onclick="gtag('event', 'Download', { 'event_category' : 'macOS Apple Silicon', 'event_label' : '8.1'});">macOS Apple Silicon</a></li>
+
+<li><a class="github-source" href="https://github.com/SRI-CSL/PVS">
+<img src="images/github-mark.svg" alt="" /> Source on GitHub
+</a></li>
 <li><a href="downloads.html">All Downloads...</a></li>
 </ul>
-<h4><a href="downloads.html">Install 8.0 Beta</a></h4>
 <h4>NASA Additions</h4>
 <ul>
 <li><a href="https://shemesh.larc.nasa.gov/fm/pvs/PVS-library"
-onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '7.1.0'});">NASA Library</a></li>
+onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '8.1'});">NASA Library</a></li>
 <li><a href="https://github.com/nasa/vscode-pvs"
-onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '7.1.0'});">VSCode PVS Plugin</a></li>
+onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '8.1'});">VSCode PVS Plugin</a></li>
 </ul>
 <h4>Manuals</h4>
 <ul>
 <li><a href="doc/pvs-release-notes.pdf"
-onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '7.1.0'});">Release Notes</a></li>
+onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '8.1'});">Release Notes</a></li>
 <li><a href="doc/pvs-system-guide.pdf"
-onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '7.1.0'});">System Guide</a></li>
+onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '8.1'});">System Guide</a></li>
 <li><a href="doc/pvs-language-reference.pdf"
-onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '7.1.0'});">Language Reference</a></li>
+onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '8.1'});">Language Reference</a></li>
 <li><a href="doc/pvs-prover-guide.pdf"
-onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '7.1.0'});">Prover Guide</a></li>
+onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '8.1'});">Prover Guide</a></li>
 <li><a href="doc/datatypes.pdf"
-onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '7.1.0'});">Datatypes</a></li>
+onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '8.1'});">Datatypes</a></li>
 <li><a href="doc/interpretations.pdf"
-onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '7.1.0'});">Theory Interpretations</a></li>
+onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' : '8.1'});">Theory Interpretations</a></li>
 </ul>
 <h4>Patches</h4>
 <ul>
@@ -98,9 +93,9 @@ onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' 
       <h1>WS1S</h1>
 
       <p>
-	<b>syntax:</b> <tt>(ws1s &amp;optional (fnums *) (examples? t)
+	<b>syntax:</b> <code class="language-pvs-strategy">(ws1s &amp;optional (fnums *) (examples? t)
 	  (automaton? nil) (traces? nil) (verbose? t) (defs !)
-	  theories rewrites exclude)</tt>
+	  theories rewrites exclude)</code>
       </p>
       <p>
 	<b>effect: </b>This strategy implements a decision procedure for the Weak Second-order
@@ -109,7 +104,8 @@ onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' 
         to addition/subraction with/from a constant, and operations on finite sets
         over the naturals like union, intersection, set difference, addition and
         removal of a natural.  Predicates include arithmetic comparisons
-        like <tt>&lt</tt>, <tt>&lt=</tt>, <tt>&gt</tt>, <tt>&gt=</tt>,
+        like <code class="language-pvs">&lt;</code>, <code class="language-pvs">&lt;=</code>,
+        <code class="language-pvs">&gt;</code>, <code class="language-pvs">&gt;=</code>,
 	equality, disequality, the subset relation,
         and membership in the form <tt>P(i)</tt>.  There is quantification over the booleans,
         the natural numbers, finite sets of naturals, and predicate subtypes of the
@@ -117,8 +113,8 @@ onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' 
         Furthermore, natural numbers, and finite sets of natural numbers may also
         be described using the <tt>the</tt> operator; e.g. ripple-carry addition may be
         defined as:
-	<pre>
-          +(P, Q: finite_set[nat]): finite_set[nat] = 
+      </p>
+      <pre><code class="language-pvs">          +(P, Q: finite_set[nat]): finite_set[nat] =
             the({R: finite_set[nat] | 
                EXISTS (C: finite_set[nat]): NOT(C(0)) AND
                  FORALL (t: nat):
@@ -126,14 +122,14 @@ onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' 
                                (P(t) AND C(t)) OR
                                (Q(t) AND C(t))))
                   AND (R(t) = P(t) = Q(t) = C(t))});
-	</pre>
-        Using this definition, lemmas such as
-	<pre>
-          plus_assoc: LEMMA
+      </code></pre>
+      <p>Using this definition, lemmas such as</p>
+      <pre><code class="language-pvs">          plus_assoc: LEMMA
              FORALL (X, Y, Z: finite_set[nat]):
                 X + (Y + Z) = (X + Y) + Z
-	</pre>
-        are proven to be valid by simply calling <tt>(WS1S)</tt>.
+      </code></pre>
+      <p>
+        are proven to be valid by simply calling <code class="language-pvs-strategy">(WS1S)</code>.
       </p>
       <p>
         In a first step, the WS1S strategy rewrites the
@@ -142,7 +138,7 @@ onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' 
         of their interpretations.  Hereby, subformulas that do not appear
         to be in the WS1S fragment are abstracted away by introducing
         new parameters.  If the final automaton recognizes the full set,
-        the <tt>FNUMS</tt> formulas are replaced by <tt>TRUE</tt>; otherwise, these formulas are
+        the <tt>FNUMS</tt> formulas are replaced by <code class="language-pvs">TRUE</code>; otherwise, these formulas are
         left unchanged.
       </p>
       <p>
@@ -177,11 +173,11 @@ onclick="gtag('event', 'Download', { 'event_category' : 'Manual', 'event_label' 
         These messages may be helpful in detecting expressions that
         are not known to be in WS1S by the translator.  In these cases,
         it might be useful to decorate these expressions with appropriate
-        type coercions (e.g. <tt>{x: nat | x = 1 OR x = 2} :: finite_set[nat]</tt>)
+        type coercions (e.g. <code class="language-pvs">{x: nat | x = 1 OR x = 2} :: finite_set[nat]</code>)
         to support the translation process.
       </p>
       <p>
-	<b>usage:</b> <tt>(ws1s 1 :examples? nil :verbose?? nil)</tt>
+	<b>usage:</b> <code class="language-pvs-strategy">(ws1s 1 :examples? nil :verbose?? nil)</code>
 	Tries to reduce formula 1 to true; suppresses both translation
 	messages and the display of a witness and a counterexample in
 	case this formula is neither valid nor satisfiable.
